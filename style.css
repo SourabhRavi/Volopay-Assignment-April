@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
 }
 
@@ -13,6 +13,9 @@ h1,
 p {
     font-size: 18px;
 }
+
+
+/* Navbar */
 
 #navbar {
     background-color: #52557E;
@@ -37,7 +40,7 @@ p {
 }
 
 #brand img {
-    padding: 0 10px 0 15px;
+    padding: 0 15px;
     width: 45px;
 }
 
@@ -77,4 +80,50 @@ p {
 #subscribeButton img {
     height: 12px;
     width: 12px;
+}
+
+
+/* Cards container */
+
+#container {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 40px 100px;
+    height: auto;
+    width: 75vw;
+    /* background-color: red; */
+}
+
+.card {
+    height: 400px;
+    background-color: #5A5F89;
+    overflow: hidden;
+}
+
+.image {
+    height: 45%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.one {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+.ten {
+    grid-column-end: span 2;
+}
+
+.specialCard {
+    padding: 60px 30px;
+    text-align: left;
+}
+
+.specialCard img {
+    height: 15px;
 }
