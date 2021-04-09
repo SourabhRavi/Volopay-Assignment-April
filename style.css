@@ -1,1 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
 
+body {
+    background-color: #3F406C;
+}
+
+h1,
+p {
+    font-size: 18px;
+}
+
+#navbar {
+    background-color: #52557E;
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.shadow {
+    -webkit-box-shadow: 1px 0 5px 0 #252644;
+    box-shadow: 1px 0 5px 0 #252644;
+}
+
+#brand {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+#brand img {
+    padding: 0 10px 0 15px;
+    width: 45px;
+}
+
+#subscribe {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    height: 100%;
+    width: 400px;
+    background-color: #5A5F89;
+}
+
+#subscribe p {
+    color: #B3B8E4;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+#subscribeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50px;
+    background-color: #A88CD9;
+}
+
+#subscribeButton:hover {
+    background-color: #C7AEF2;
+}
+
+#subscribeButton:active {
+    background-color: #966EDC;
+}
+
+#subscribeButton img {
+    height: 12px;
+    width: 12px;
+}
