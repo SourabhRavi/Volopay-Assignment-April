@@ -7,6 +7,8 @@
 
 body {
     background-color: #3F406C;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
 }
 
 a {
@@ -211,6 +213,9 @@ i {
     font-size: 14px;
     font-weight: 500;
 }
+
+
+/* Footer */
 
 footer {
     text-align: center;
