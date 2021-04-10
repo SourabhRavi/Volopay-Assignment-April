@@ -28,7 +28,7 @@ h1 {
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background-image: "./img/svg-login.svg";
+    background-image: url("./img/svg-login.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
