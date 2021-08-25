@@ -76,22 +76,44 @@ p {
     justify-content: center;
     height: 100%;
     width: 50px;
-    background-color: #A88CD9;
+    outline: none;
+    border: 3px solid #fff;
+}
+
+#subscribeButton i {
+    padding: 0;
+    font-size: 20px;
 }
 
 #subscribeButton:hover {
-    background-color: #C7AEF2;
+    border: 3px solid #8a5ed6;
 }
 
 #subscribeButton:active {
-    background-color: #966EDC;
+    background: #A88CD9;
+}
+
+#subscribeButton:active i {
+    color: #fff;
+}
+
+.subscribeInactive {
+    background: #fff;
+}
+
+.subscribeInactive i {
+    color: #8a5ed6;
+}
+
+.subscribeActive {
+    background: #8a5ed6;
+    border: 3px solid #fff;
 }
 
 #subscribeButton img {
     height: 12px;
     width: 12px;
 }
-
 
 /* Font Awesome padding */
 
@@ -237,4 +259,51 @@ footer i:hover {
 
 footer i:active {
     color: #E01541;
+}
+
+@media only screen and (max-width: 1024px) {
+    #container {
+        display: grid;
+        margin: auto;
+        padding: 40px 0px;
+        width: 90vw;
+    }
+
+    .card {
+        height: 470px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 85vw;
+    }
+
+    .card {
+        height: 480px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #container {
+        grid-template-columns: 380px;
+        grid-template-rows: repeat(2, 1fr);
+        width: 85vw;
+    }
+
+    .ten {
+        grid-column-end: span 1;
+    }
+
+    .one {
+        grid-column-start: 1;
+        grid-column-end: span 1;
+    }
+
+    #brand h1 {
+        font-size: 12px;
+        width: 100px
+    }
 }
