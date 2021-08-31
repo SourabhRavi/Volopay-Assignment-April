@@ -290,7 +290,7 @@ footer i:active {
 @media only screen and (max-width: 425px) {
     #container {
         grid-template-columns: auto;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 1;
         width: 85vw;
     }
 
