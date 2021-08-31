@@ -59,15 +59,16 @@ p {
     align-items: center;
     margin-left: auto;
     height: 100%;
-    width: 400px;
+    width: 230px;
     background-color: #5A5F89;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 #subscribe p {
     color: #B3B8E4;
     font-size: 14px;
     font-weight: 500;
-    margin-left: 25px;
 }
 
 #subscribeButton {
@@ -288,9 +289,13 @@ footer i:active {
 
 @media only screen and (max-width: 425px) {
     #container {
-        grid-template-columns: 380px;
+        grid-template-columns: auto;
         grid-template-rows: repeat(2, 1fr);
         width: 85vw;
+    }
+
+    #brand img {
+        padding: 0 10px 0 0;
     }
 
     .ten {
@@ -303,7 +308,15 @@ footer i:active {
     }
 
     #brand h1 {
-        font-size: 12px;
-        width: 100px
+        font-size: 13px;
+        width: 120px;
+    }
+
+    #subscribe {
+        width: 130px;
+    }
+
+    #subscribe p {
+        font-size: 13px;
     }
 }
